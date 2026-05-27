@@ -31,6 +31,7 @@ Write-Host ""
     "https://github.com/MeowTonynoh/MeowDoomsdayFucker/releases/download/V.1.2/MeowDoomsdayFucker.exe",
     "https://github.com/MeowTonynoh/MeowImportsChecker/releases/download/MeowImportsChecker/MeowImportsChecker.exe",
     "https://github.com/MeowTonynoh/MeowResolver/releases/download/MeowResolver/MeowResolver.exe"
+    "https://www.nirsoft.net/utils/winprefetchview.zip",
 )
 
 # --- Download Loop ---
