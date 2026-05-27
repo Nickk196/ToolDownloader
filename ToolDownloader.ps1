@@ -92,20 +92,10 @@ foreach ($url in $urls) {
         # Use Invoke-WebRequest to download the file
         Invoke-WebRequest -Uri $url -OutFile $destination -UseBasicParsing
         
-        # Check if the file is a ZIP and extract it automatically (for NirSoft tools)
-        if ($fileName -like "*.zip") {
-            Write-Host " [EXTRACTING]..." -ForegroundColor Yellow
-            try {
-                Expand-Archive -Path $destination -DestinationPath $downloadDir -Force
-                Write-Host " [EXTRACTED]" -ForegroundColor Green
-            }
-            catch {
-                Write-Host " [EXTRACT ERROR]" -ForegroundColor Red
-            }
-        }
-        else {
-            Write-Host " [DONE]" -ForegroundColor Green
-        }
+        # --- EXTRACTION REMOVED PER REQUEST ---
+        # Files (including zips) will remain in their original format.
+        
+        Write-Host " [DONE]" -ForegroundColor Green
     }
     catch {
         Write-Host " [FAILED]" -ForegroundColor Red
